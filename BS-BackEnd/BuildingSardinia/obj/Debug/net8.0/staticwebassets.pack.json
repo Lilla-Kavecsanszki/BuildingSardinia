@@ -33,10 +33,6 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/index.html",
-      "PackagePath": "staticwebassets/index.html"
-    },
-    {
       "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/scripts.js",
       "PackagePath": "staticwebassets/scripts.js"
     },

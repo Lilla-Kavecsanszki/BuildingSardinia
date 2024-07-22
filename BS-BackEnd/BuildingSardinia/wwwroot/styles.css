@@ -130,8 +130,9 @@ header {
 
 /* Main content styles */
 main {
-    padding: 2em;
-    margin-top: 70px; /* To avoid content being hidden under the fixed header */
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .hero h1 {
@@ -145,7 +146,7 @@ main {
 
 /* Property listings styles */
 .property-listings {
-    padding: 2em;
+    /* padding: 2em; */
     border-radius: 10px;
     margin-bottom: 2em;
     text-align: center;

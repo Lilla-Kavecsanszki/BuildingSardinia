@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuildingSardinia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa3aabd04d14aa88207b6ddc12261d0c8c2c97a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+247f268078629e191b5319aca8933a83d0cce09d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuildingSardinia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuildingSardinia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

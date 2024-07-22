@@ -1,11 +1,8 @@
-using BuildingSardinia.Models;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Configure DbContext to use PostgreSQL
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql("Host=localhost;Database=building_sardinia;Username=lilla;Password=sardinia"));
 
 // Add services to the container
 builder.Services.AddControllersWithViews();
@@ -19,8 +16,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Uncomment the following line if you want HTTPS redirection
 // app.UseHttpsRedirection();
-app.UseDefaultFiles(); // Enable serving of default files like index.html
+
 app.UseStaticFiles();  // Serve static files from wwwroot
 
 app.UseRouting();
@@ -32,7 +30,4 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// Remove the call to MapRazorPages since we're not using Razor Pages
-// app.MapRazorPages();
-
-app.Run("http://localhost:5014"); // Specify the URL if needed
+app.Run(); // Use default URL (http://localhost:5000)

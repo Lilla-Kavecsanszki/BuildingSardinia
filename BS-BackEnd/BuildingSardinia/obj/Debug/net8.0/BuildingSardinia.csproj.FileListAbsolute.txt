@@ -108,3 +108,5 @@
 /Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/obj/Debug/net8.0/BuildingSardinia.RazorAssemblyInfo.cache
 /Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/obj/Debug/net8.0/BuildingSardinia.RazorAssemblyInfo.cs
 /Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/bin/Debug/net8.0/BuildingSardinia.staticwebassets.runtime.json
+/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/bin/Debug/net8.0/package-lock.json
+/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/bin/Debug/net8.0/package.json

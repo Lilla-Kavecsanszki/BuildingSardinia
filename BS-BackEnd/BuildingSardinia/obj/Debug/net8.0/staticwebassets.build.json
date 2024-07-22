@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6jz5CGXDVKIzY9E8YjSST9UDQNQn3Bl28xjpUK/0DP8=",
+  "Hash": "tVqD70MegTJhr8gNeNC6K/oje3JBelZL98eGfWLG+zk=",
   "Source": "BuildingSardinia",
   "BasePath": "_content/BuildingSardinia",
   "Mode": "Default",
@@ -167,25 +167,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
-    },
-    {
-      "Identity": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/index.html",
-      "SourceId": "BuildingSardinia",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/",
-      "BasePath": "_content/BuildingSardinia",
-      "RelativePath": "index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/index.html"
     },
     {
       "Identity": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/scripts.js",
