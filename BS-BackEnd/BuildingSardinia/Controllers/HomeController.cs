@@ -21,12 +21,13 @@ namespace BuildingSardinia.Controllers
         {
         }
 
+        // Keeping async for future use
         public async Task<IActionResult> Index()
         {
             // Static data instead of database call
             var properties = new List<Property>
             {
-                new Property { Id = 1, Name = "Sample Property 1", Location = "Location 1", Description = "Description 1" },
+                new Property { Id = 1, Name = "Blalabab 1", Location = "Location 1", Description = "Description 1" },
                 new Property { Id = 2, Name = "Sample Property 2", Location = "Location 2", Description = "Description 2" },
                 new Property { Id = 3, Name = "Sample Property 3", Location = "Location 3", Description = "Description 3" }
             };
@@ -36,6 +37,9 @@ namespace BuildingSardinia.Controllers
                 Properties = properties,
                 TotalCount = properties.Count
             };
+
+            // Simulating async operation (you'll replace this with actual async calls in the future)
+            await Task.CompletedTask;
 
             return View(model);
         }
