@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/house1.jpg",
+      "PackagePath": "staticwebassets/assets/images/house1.jpg"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/house2.jpg",
+      "PackagePath": "staticwebassets/assets/images/house2.jpg"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/house3.jpg",
+      "PackagePath": "staticwebassets/assets/images/house3.jpg"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/house4.jpg",
+      "PackagePath": "staticwebassets/assets/images/house4.jpg"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/logo.png",
+      "PackagePath": "staticwebassets/assets/images/logo.png"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/logo2.png",
+      "PackagePath": "staticwebassets/assets/images/logo2.png"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/videos/hero_video.mp4",
+      "PackagePath": "staticwebassets/assets/videos/hero_video.mp4"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/scripts.js",
+      "PackagePath": "staticwebassets/scripts.js"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/styles.css",
+      "PackagePath": "staticwebassets/styles.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BuildingSardinia.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BuildingSardinia.props",
+      "PackagePath": "build\\BuildingSardinia.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BuildingSardinia.props",
+      "PackagePath": "buildMultiTargeting\\BuildingSardinia.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BuildingSardinia.props",
+      "PackagePath": "buildTransitive\\BuildingSardinia.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
