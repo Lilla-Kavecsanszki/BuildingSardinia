@@ -209,8 +209,8 @@ main {
 .property {
     display: inline-block;
     font-family: "Cormorant Garamond", serif;
-    height: 200px; /* Adjust height for landscape orientation */
-    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust height for landscape orientation */
+    width: 500px; /* Adjust as needed */
     margin: 1em;
     background-color: #051c2c;
     border: 1px solid #ddd;

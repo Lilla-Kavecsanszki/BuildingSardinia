@@ -1,16 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using BuildingSardinia.Models; // Ensure this matches the namespace of your ApplicationDbContext class
 
-namespace BuildingSardinia.Models
+public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
 {
-    public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
+    public ApplicationDbContext CreateDbContext(string[] args)
     {
-        public ApplicationDbContext CreateDbContext(string[] args)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseNpgsql("Host=localhost;Database=building_sardinia;Username=lilla;Password=sardinia");
+        var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
+        optionsBuilder.UseSqlite("Data Source=building_sardinia.db");
 
-            return new ApplicationDbContext(optionsBuilder.Options);
-        }
+        return new ApplicationDbContext(optionsBuilder.Options);
     }
 }

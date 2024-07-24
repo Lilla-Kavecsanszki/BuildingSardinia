@@ -2,16 +2,16 @@ namespace BuildingSardinia.Models
 {
     public class Property
     {
-        // Primary key
-        public int Id { get; set; }  // No default value needed for primary key
-
-        public string Name { get; set; } = string.Empty;  // Default to empty string
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public string ImageUrl { get; set; } = string.Empty;
-        public string[] ImageUrls { get; set; } = Array.Empty<string>();  // Default to empty array
         public string Location { get; set; } = string.Empty;
         public string PropertyType { get; set; } = string.Empty;
         public string Features { get; set; } = string.Empty;
         public string VideoUrl { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
+        public int Bedrooms { get; set; } = 0; // Default to 0
+        public int Bathrooms { get; set; } = 0; // Default to 0
+        public DateTime CreatedAt { get; set; }
     }
 }

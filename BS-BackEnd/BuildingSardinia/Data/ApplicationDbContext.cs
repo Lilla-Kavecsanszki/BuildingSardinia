@@ -15,8 +15,9 @@ namespace BuildingSardinia.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("Host=localhost;Database=building_sardinia;Username=lilla;Password=sardinia");
+                optionsBuilder.UseSqlite("Data Source=building_sardinia.db");
             }
         }
     }
 }
+
