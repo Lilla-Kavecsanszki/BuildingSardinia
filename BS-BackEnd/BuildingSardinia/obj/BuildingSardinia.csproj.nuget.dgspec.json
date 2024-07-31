@@ -74,6 +74,14 @@
             "Umbraco.Cms": {
               "target": "Package",
               "version": "[14.1.1, )"
+            },
+            "Umbraco.Cms.Web.Common": {
+              "target": "Package",
+              "version": "[14.1.1, )"
+            },
+            "sqlitepclraw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.8, )"
             }
           },
           "imports": [

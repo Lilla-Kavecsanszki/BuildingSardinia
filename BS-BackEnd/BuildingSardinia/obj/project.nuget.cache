@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nqHPZRRptMc=",
+  "dgSpecHash": "gu8iahBaqXM=",
   "success": true,
   "projectFilePath": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/BuildingSardinia.csproj",
   "expectedPackageFiles": [
@@ -192,10 +192,10 @@
     "/Users/lilla/.nuget/packages/serilog.sinks.map/1.0.2/serilog.sinks.map.1.0.2.nupkg.sha512",
     "/Users/lilla/.nuget/packages/sixlabors.imagesharp/3.1.4/sixlabors.imagesharp.3.1.4.nupkg.sha512",
     "/Users/lilla/.nuget/packages/sixlabors.imagesharp.web/3.1.2/sixlabors.imagesharp.web.3.1.2.nupkg.sha512",
-    "/Users/lilla/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
-    "/Users/lilla/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
-    "/Users/lilla/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
-    "/Users/lilla/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/lilla/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.8/sqlitepclraw.bundle_e_sqlite3.2.1.8.nupkg.sha512",
+    "/Users/lilla/.nuget/packages/sqlitepclraw.core/2.1.8/sqlitepclraw.core.2.1.8.nupkg.sha512",
+    "/Users/lilla/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.8/sqlitepclraw.lib.e_sqlite3.2.1.8.nupkg.sha512",
+    "/Users/lilla/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.8/sqlitepclraw.provider.e_sqlite3.2.1.8.nupkg.sha512",
     "/Users/lilla/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "/Users/lilla/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "/Users/lilla/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",

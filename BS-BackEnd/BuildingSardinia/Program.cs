@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BuildingSardinia.Models; // Adjust if your namespace is different
+using BuildingSardinia.Models;
 using Umbraco.Cms.Core.DependencyInjection;
-using System.Security.Claims; // Ensure this namespace is included
+using Umbraco.Cms.Web.Common.Extensions;
+using Umbraco.Cms.Web.Common;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +17,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configure Umbraco
+// Configure Umbraco with required parameters
 builder.Services.AddUmbraco(builder.Environment, builder.Configuration)
     .AddBackOffice()
     .AddWebsite()
@@ -50,7 +52,17 @@ app.UseAuthentication(); // Ensure authentication is used
 app.UseAuthorization();
 
 // Map Umbraco routes
-app.UseUmbraco();
+app.UseUmbraco()
+    .WithMiddleware(u =>
+    {
+        u.UseBackOffice();
+        u.UseWebsite();
+    })
+    .WithEndpoints(u =>
+    {
+        u.UseBackOfficeEndpoints();
+        u.UseWebsiteEndpoints();
+    });
 
 // Map controllers for your APIs and MVC views
 app.MapControllerRoute(

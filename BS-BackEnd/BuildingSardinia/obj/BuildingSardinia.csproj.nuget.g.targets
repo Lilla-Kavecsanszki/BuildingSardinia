@@ -10,6 +10,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server/6.0.5/build/Microsoft.Extensions.ApiDescription.Server.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server/6.0.5/build/Microsoft.Extensions.ApiDescription.Server.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions/8.4.0/buildTransitive/net6.0/Microsoft.Extensions.Telemetry.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions/8.4.0/buildTransitive/net6.0/Microsoft.Extensions.Telemetry.Abstractions.targets')" />
     <Import Project="$(NuGetPackageRoot)umbraco.cms.targets/14.1.1/buildTransitive/Umbraco.Cms.Targets.targets" Condition="Exists('$(NuGetPackageRoot)umbraco.cms.targets/14.1.1/buildTransitive/Umbraco.Cms.Targets.targets')" />
-    <Import Project="$(NuGetPackageRoot)sqlitepclraw.lib.e_sqlite3/2.1.6/buildTransitive/net8.0/SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('$(NuGetPackageRoot)sqlitepclraw.lib.e_sqlite3/2.1.6/buildTransitive/net8.0/SQLitePCLRaw.lib.e_sqlite3.targets')" />
+    <Import Project="$(NuGetPackageRoot)sqlitepclraw.lib.e_sqlite3/2.1.8/buildTransitive/net8.0/SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('$(NuGetPackageRoot)sqlitepclraw.lib.e_sqlite3/2.1.8/buildTransitive/net8.0/SQLitePCLRaw.lib.e_sqlite3.targets')" />
   </ImportGroup>
 </Project>
