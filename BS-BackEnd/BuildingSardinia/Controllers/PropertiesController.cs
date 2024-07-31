@@ -1,39 +1,31 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using BuildingSardinia.Models;
+using BuildingSardinia.Services;
 using System.Threading.Tasks;
 
 namespace BuildingSardinia.Controllers
 {
     public class PropertiesController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IPropertyService _propertyService;
 
-        public PropertiesController(ApplicationDbContext context)
+        public PropertiesController(IPropertyService propertyService)
         {
-            _context = context;
+            _propertyService = propertyService;
         }
 
-        // GET: Properties
-        public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 9)
         {
-            var properties = await _context.Properties
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
-
-            var totalCount = await _context.Properties.CountAsync();
-
+            var properties = await _propertyService.GetPropertiesAsync(page, pageSize);
             var model = new PropertyListViewModel
             {
-                Properties = properties,
-                TotalCount = totalCount,
+                Properties = properties.Properties,
+                TotalCount = properties.TotalCount,
                 CurrentPage = page,
                 PageSize = pageSize
             };
 
-            return View(model);
+            return View("PropertyListing", model); // Use PropertyListing view
         }
     }
 }
-

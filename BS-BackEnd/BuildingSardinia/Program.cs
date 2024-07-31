@@ -3,15 +3,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BuildingSardinia.Models;
+using BuildingSardinia.Services; // Ensure this namespace is included
 using Umbraco.Cms.Core.DependencyInjection;
 using Umbraco.Cms.Web.Common.Extensions;
 using Umbraco.Cms.Web.Common;
-using System.Security.Claims;
+using System.Security.Claims; // Ensure this namespace is included
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IPropertyService, PropertyService>();
 
 // Configure DbContext with SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -68,6 +71,11 @@ app.UseUmbraco()
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "properties",
+    pattern: "Properties/{action=PropertyListing}/{id?}",
+    defaults: new { controller = "Properties", action = "PropertyListing" });
 
 // Restrict access to Umbraco back office
 app.MapWhen(

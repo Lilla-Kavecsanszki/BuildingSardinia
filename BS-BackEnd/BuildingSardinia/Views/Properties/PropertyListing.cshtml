@@ -1,0 +1,42 @@
+@model BuildingSardinia.Models.PropertyListViewModel
+
+@{
+    ViewData["Title"] = "Properties";
+}
+
+<h2>Properties</h2>
+
+<div class="property-list">
+    <div class="row">
+        @foreach (var property in Model.Properties)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="@((Func<string>)(() => property.ImageUrl))()" class="card-img-top" alt="@((Func<string>)(() => property.Name))()">
+                    <div class="card-body">
+                        <h5 class="card-title">@((Func<string>)(() => property.Name))()</h5>
+                        <p class="card-text">@property.Location</p>
+                        <p class="card-text">@property.PropertyType</p>
+                        <p class="card-text">@property.Features</p>
+                        <p class="card-text">Price: $@property.Price</p>
+                        <p class="card-text">Size: @property.Size sqft</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="pagination">
+    @if (Model.CurrentPage > 1)
+    {
+        <a href="@Url.Action("Index", new { page = Model.CurrentPage - 1 })">Previous</a>
+    }
+
+    Page @(Model.CurrentPage) of @(Model.TotalCount / Model.PageSize + (Model.TotalCount % Model.PageSize > 0 ? 1 : 0))
+
+    @if (Model.CurrentPage * Model.PageSize < Model.TotalCount)
+    {
+        <a href="@Url.Action("Index", new { page = Model.CurrentPage + 1 })">Next</a>
+    }
+</div>
