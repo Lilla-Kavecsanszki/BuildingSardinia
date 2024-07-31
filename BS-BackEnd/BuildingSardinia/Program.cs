@@ -94,7 +94,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "contact",
-    pattern: "Contact/{action=Index}/{id?}",
+    pattern: "Contact/{action=Contact}/{id?}",
     defaults: new { controller = "Contact" });
 
 

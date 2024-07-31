@@ -1,0 +1,80 @@
+/* about.css */
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: whitesmoke;
+    color: #051c2c;
+    padding-top: 10%; /* Adjust the value based on the height of your navbar */
+}s
+
+.team {
+    text-align: center;
+    color: red; 
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 1em;
+}
+
+.container {
+    padding: 2em;
+    margin-top: 2%; /* Add margin-top for spacing */
+}
+
+/* Title Styles */
+h1 {
+    font-family: "Cinzel", serif;
+    color: #051c2c;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Image Fluid */
+img.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Team Member Styles */
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 1em;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Adjust font sizes for smaller screens */
+    }
+
+    .team-member img {
+        width: 120px; /* Reduce size for smaller screens */
+        height: 120px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 0.5em;
+    }
+
+    h1, h2 {
+        font-size: 1.25rem; /* Adjust font sizes further for mobile screens */
+    }
+
+    .team-member img {
+        width: 100px; /* Further reduce size for mobile screens */
+        height: 100px;
+    }
+}

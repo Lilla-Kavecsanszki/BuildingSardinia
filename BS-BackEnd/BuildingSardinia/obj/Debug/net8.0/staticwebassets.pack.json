@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/assets/images/house4.jpg"
     },
     {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/inspiration-house.jpg",
+      "PackagePath": "staticwebassets/assets/images/inspiration-house.jpg"
+    },
+    {
       "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/logo.png",
       "PackagePath": "staticwebassets/assets/images/logo.png"
     },
@@ -25,8 +29,32 @@
       "PackagePath": "staticwebassets/assets/images/logo2.png"
     },
     {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/team-member-1.jpg",
+      "PackagePath": "staticwebassets/assets/images/team-member-1.jpg"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/team-member-2.jpg",
+      "PackagePath": "staticwebassets/assets/images/team-member-2.jpg"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/images/team-member-3.jpg",
+      "PackagePath": "staticwebassets/assets/images/team-member-3.jpg"
+    },
+    {
       "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/assets/videos/hero_video.mp4",
       "PackagePath": "staticwebassets/assets/videos/hero_video.mp4"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/css/about.css",
+      "PackagePath": "staticwebassets/css/about.css"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/css/contact.css",
+      "PackagePath": "staticwebassets/css/contact.css"
+    },
+    {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
     },
     {
       "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/favicon.ico",
@@ -35,10 +63,6 @@
     {
       "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/scripts.js",
       "PackagePath": "staticwebassets/scripts.js"
-    },
-    {
-      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/styles.css",
-      "PackagePath": "staticwebassets/styles.css"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BuildingSardinia.Microsoft.AspNetCore.StaticWebAssets.props",

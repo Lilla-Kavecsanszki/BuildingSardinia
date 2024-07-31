@@ -5,6 +5,7 @@ namespace BuildingSardinia.Models
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Property> Properties { get; set; }
+        public DbSet<ContactForm> ContactForms { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -20,4 +21,3 @@ namespace BuildingSardinia.Models
         }
     }
 }
-

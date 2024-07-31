@@ -1,5 +1,72 @@
 @*
   About page view.
 *@
-<h1>About</h1>
-<p>Welcome to the About page.</p>
+
+@{
+    ViewData["Title"] = "About Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/css/about.css")" />
+}
+
+<div class="container">
+    <div class="row mt-5">
+        <!-- Main Content Section -->
+        <div class="col-md-8">
+            <h1>About Us</h1>
+            <p>Welcome to the About page. Here we share the story of our company, our values, and what drives us to help you find the perfect property.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum mi odio, eget efficitur metus imperdiet a. Morbi sit amet condimentum tortor, nec malesuada mauris. Fusce semper ut ligula molestie cursus. Quisque tempus viverra est, in ultricies magna pretium vel. Vivamus eleifend iaculis risus, quis tristique velit lobortis in. Integer dictum cursus facilisis. Maecenas at consectetur nulla, vitae pulvinar purus. Donec molestie rutrum velit, a blandit velit aliquam et.
+
+Aliquam aliquam augue at dictum rhoncus. Nam ac faucibus urna. Duis at ex eu enim pulvinar gravida ac eu quam. Donec vel laoreet magna. Aliquam erat volutpat. Duis dapibus ultricies nibh, ut varius purus auctor at. Aliquam fringilla ultrices tincidunt. Aliquam erat volutpat.
+
+Duis elementum leo in libero commodo porta. Sed venenatis maximus sem vel fringilla. Phasellus ut tortor ultrices, pellentesque augue quis, consequat eros. Mauris eu augue at mi venenatis molestie vehicula bibendum felis. Ut suscipit ante est, non volutpat nunc laoreet nec. Fusce eget pharetra sapien. Nulla aliquam semper mattis. Phasellus eget tellus massa. Fusce cursus pretium ipsum, eu suscipit nunc aliquet at. Sed hendrerit mattis sollicitudin. Sed sagittis quam id urna ultrices maximus. Vestibulum mollis magna leo, eget venenatis ipsum viverra nec. Praesent dignissim mollis ante at fringilla. Sed urna elit, cursus sed erat eget, malesuada consectetur purus. Cras egestas ligula sed neque ullamcorper, egestas cursus mauris egestas. Integer non interdum libero, nec aliquam tellus.
+
+Donec mollis sem convallis felis sagittis hendrerit. Nunc nulla leo, iaculis eget orci ut, auctor ultrices velit. Proin id nunc et leo placerat posuere. Nullam risus est, faucibus sed rhoncus non, laoreet non enim. Sed consequat mi aliquet tellus euismod, ac venenatis nunc fringilla. Ut cursus eros elit, sit amet consectetur dolor tincidunt nec. Suspendisse congue tellus quis dolor hendrerit, viverra hendrerit purus sollicitudin. Aenean ultrices justo ut nibh scelerisque, eget porta diam tristique. Integer ut lacus non nunc accumsan maximus ultricies ut diam. Nam ornare porttitor porttitor. Vestibulum suscipit ipsum dictum ex iaculis, elementum viverra magna egestas. Proin est dolor, tempus quis tortor eu, ullamcorper aliquet libero. Nullam rutrum suscipit odio, non bibendum metus tempor hendrerit. Nunc pretium lectus leo, vel vestibulum sapien luctus quis. Cras tortor dolor, blandit elementum erat quis, iaculis dignissim ipsum.
+
+Proin volutpat congue arcu luctus gravida. Mauris neque nisi, accumsan vitae purus ut, convallis vehicula purus. Ut vitae neque tristique, tincidunt magna id, sollicitudin felis. Nulla in volutpat arcu. Duis et metus a nisl blandit volutpat nec ut tellus. Curabitur sed dui id metus sollicitudin placerat. In fermentum, ligula eget condimentum consequat, justo augue malesuada leo, ac semper ligula dui eget lorem. Integer facilisis id nisi eu vehicula. Proin lacus massa, congue in dui in, iaculis scelerisque ipsum.</p>
+            <p>Our journey started with a single house that inspired us to create a platform where people could find quality homes with ease. From humble beginnings, we have grown to serve clients across the region.</p>
+        </div>
+        
+        <!-- Photo Section -->
+        <div class="col-md-4">
+            <img src="@Url.Content("~/assets/images/inspiration-house.jpg")" alt="Inspiration House" class="img-fluid" />
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <!-- Team Section -->
+        <div class="col-12">
+            <h2 class="team">Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="team-member">
+                        <img src="@Url.Content("~/assets/images/team-member-1.jpg")" alt="Team Member 1" class="img-fluid rounded-circle" />
+                        <h3>Jane Doe</h3>
+                        <p>Jane is the founder of our company with a passion for real estate and customer satisfaction. With over 10 years in the industry, she leads our team with dedication and expertise.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="team-member">
+                        <img src="@Url.Content("~/assets/images/team-member-2.jpg")" alt="Team Member 2" class="img-fluid rounded-circle" />
+                        <h3>John Smith</h3>
+                        <p>John brings a wealth of knowledge in property management and customer service. He ensures that every client has a smooth and positive experience with our services.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="team-member">
+                        <img src="@Url.Content("~/assets/images/team-member-3.jpg")" alt="Team Member 3" class="img-fluid rounded-circle" />
+                        <h3>Emily Johnson</h3>
+                        <p>Emily specializes in marketing and outreach. She works tirelessly to promote our services and connect with potential clients to help them find their dream property.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
