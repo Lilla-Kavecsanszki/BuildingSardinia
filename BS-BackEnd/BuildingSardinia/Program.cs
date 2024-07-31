@@ -75,7 +75,28 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "properties",
     pattern: "Properties/{action=PropertyListing}/{id?}",
-    defaults: new { controller = "Properties", action = "PropertyListing" });
+    defaults: new { controller = "Properties" });
+
+app.MapControllerRoute(
+    name: "construction",
+    pattern: "Construction/{action=Index}/{id?}",
+    defaults: new { controller = "Construction" });
+
+app.MapControllerRoute(
+    name: "rent",
+    pattern: "Rent/{action=Index}/{id?}",
+    defaults: new { controller = "Rent" });
+
+app.MapControllerRoute(
+    name: "about",
+    pattern: "About/{action=Index}/{id?}",
+    defaults: new { controller = "About" });
+
+app.MapControllerRoute(
+    name: "contact",
+    pattern: "Contact/{action=Index}/{id?}",
+    defaults: new { controller = "Contact" });
+
 
 // Restrict access to Umbraco back office
 app.MapWhen(
