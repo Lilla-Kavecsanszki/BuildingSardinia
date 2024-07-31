@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets/css/contact.css"
     },
     {
+      "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/css/properties.css",
+      "PackagePath": "staticwebassets/css/properties.css"
+    },
+    {
       "Id": "/Users/lilla/Desktop/BuildingSardinia/combined-project/BS-BackEnd/BuildingSardinia/wwwroot/css/styles.css",
       "PackagePath": "staticwebassets/css/styles.css"
     },

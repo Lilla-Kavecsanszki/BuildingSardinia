@@ -2,6 +2,11 @@
 
 @{
     ViewData["Title"] = "Properties";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/css/properties.css")" />
 }
 
 <h2>Properties</h2>
@@ -12,9 +17,9 @@
         {
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="@((Func<string>)(() => property.ImageUrl))()" class="card-img-top" alt="@((Func<string>)(() => property.Name))()">
+                    <img src="@property.ImageUrl" class="card-img-top" alt="@property.Name">
                     <div class="card-body">
-                        <h5 class="card-title">@((Func<string>)(() => property.Name))()</h5>
+                        <h5 class="card-title">@property.Name</h5>
                         <p class="card-text">@property.Location</p>
                         <p class="card-text">@property.PropertyType</p>
                         <p class="card-text">@property.Features</p>
